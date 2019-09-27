@@ -43,7 +43,7 @@ export const fetchSliderHandler = () => {
             if (result.status === 200)
                 return result.json();
         }).then(data => {
-            dispatch(getCalculator(data));
+            dispatch(getSlider(data));
         })
     };
 }
@@ -55,7 +55,7 @@ export const fetchCalculatorHandler = () => {
             if (result.status === 200)
                 return result.json();
         }).then(data => {
-            dispatch(getSlider(data));
+            dispatch(getCalculator(data));
         })
     };
 }
