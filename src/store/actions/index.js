@@ -1,0 +1,1 @@
+export {fetchMenuHandler,fetchSliderHandler} from './global';
