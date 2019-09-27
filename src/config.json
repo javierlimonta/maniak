@@ -1,4 +1,5 @@
 {
     "globals":"https://raw.githubusercontent.com/Bernabe-Felix/Bellotero/master/app.json",
-    "slider":"https://raw.githubusercontent.com/Bernabe-Felix/Bellotero/master/page1.json"
+    "slider":"https://raw.githubusercontent.com/Bernabe-Felix/Bellotero/master/page1.json",
+    "calculator":"https://raw.githubusercontent.com/Bernabe-Felix/Bellotero/master/page2.json"
 }

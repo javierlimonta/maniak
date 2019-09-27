@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withStyles, Grid, Typography } from '@material-ui/core';
-import {blue} from '@material-ui/core/colors';
+import { blue } from '@material-ui/core/colors';
 import * as actionCreators from '../store/actions/index';
+import Slider from './Slider';
 const styles = (theme) => ({
-    
     title: {
         maxWidth: 300,
         color: theme.palette.common.white,
-        backgroundColor:blue[500],
-        textAlign:'center',
-        margin:30
+        backgroundColor: blue[500],
+        textAlign: 'center',
+        margin: 30
     },
 })
 class PageI extends React.Component {
@@ -30,15 +30,17 @@ class PageI extends React.Component {
         }
     }
     render() {
-        const { title } = this.state;
+        const { title,reviews } = this.state;
         const { classes } = this.props;
         return (
             <Grid container justify="center" alignItems="center">
                 <Grid item xs={12}>
-
                     <Typography variant="h5" className={classes.title}>
                         {title}
                     </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Slider list={reviews}/>
                 </Grid>
             </Grid>
         )

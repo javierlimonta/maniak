@@ -1,1 +1,1 @@
-export {fetchMenuHandler,fetchSliderHandler} from './global';
+export {fetchMenuHandler,fetchSliderHandler,fetchCalculatorHandler} from './global';
